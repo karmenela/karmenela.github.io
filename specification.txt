@@ -1,0 +1,25 @@
+
+HTML Tags Used:
+<nav>
+<img>
+<button>
+<input>
+<audio>
+<form>
+<div>
+<a>
+<h1> to <h4>
+<script>
+
+CSS Properties Used:
+background-color
+font-family
+transition
+box-shadow
+animation
+
+JavaScript Use:
+JavaScript was used to add interactivity including fortune generation, animated love percentage calculation, hover sounds, and animated floating emojis.
+
+Bootstrap Use:
+Bootstrap was used for responsive layout, button styling, progress bars, and cards to create a clean, mobile-friendly, and playful interface across all pages.

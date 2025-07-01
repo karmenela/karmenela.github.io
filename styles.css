@@ -1,0 +1,298 @@
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.animated-heart {
+    animation: pulse 1.2s infinite;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    background: #aedefc;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #fb929e;
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+}
+
+/* Navbar background and shadow */
+.navbar {
+    background-color: #aedefc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Brand name style */
+.navbar-brand {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d248a !important;
+}
+
+/* Nav links styling */
+.navbar-nav .nav-link {
+    color: #2d248a !important;
+    margin: 0 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    background-color: #ffdfdf;
+    color: #2d248a!important;
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+    background-color: #ffdfdf;
+    color:#2d248a !important;
+    font-weight: 600;
+}
+
+.display-4{
+    color: #2d248a !important;
+    margin: 0 8px;
+    padding: 100px 100px;
+    border-radius: px;
+    font-weight: 500;
+}
+
+.homepage-btn {
+    background-color: #ffff !important;
+    color: #004e7c !important;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(174, 223, 252, 0.4);
+    transition: all 0.3s ease;
+}
+
+.homepage-btn:hover {
+    background-color: #ffdfdf !important;
+    color: #004e7c !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(144, 192, 232, 0.5);
+}
+
+/* Page 2: Fortune Cookie Style */
+body.page2 {
+    background-color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+}
+
+/* Fortune image */
+#cookie-image {
+    max-width: 300px;
+    transition: transform 0.5s ease;
+}
+#cookie-image:hover {
+    transform: rotate(-2deg) scale(1.05);
+}
+
+/* Reveal Button Styling */
+#reveal-button {
+    background-color: #d8b4f8;
+    color: #4a0266;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(216, 180, 248, 0.4);
+    transition: all 0.3s ease;
+}
+
+#reveal-button:hover {
+    background-color: #c084fc;
+    color: #ffffff;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(180, 132, 255, 0.5);
+}
+
+/* Progress Bar Styling */
+.progress {
+    background-color: #f3e8ff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#progress-bar {
+    background-color: #a855f7;
+    transition: width 0.4s ease;
+}
+
+/* Fortune Text Reveal */
+#fortune-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7c3aed;
+    font-style: italic;
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.btn-next{
+        background-color: #aedefc;
+        color: #004e7c;
+        border: none;
+        border-radius: 15px;
+        padding: 6px 15px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        box-shadow: 0 6px 12px rgba(216, 180, 248, 0.4);
+        transition: all 0.3s ease;
+}
+
+.btn-next:hover {
+    background-color: #aedefc;
+    color: #ffffff;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(180, 132, 255, 0.5);
+}
+
+body.page3 {
+    background-color: #ffe4ec;
+    font-family: 'Quicksand', sans-serif;
+    color: #4a0f30;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #d63384;
+    font-family: 'Rammetto One', cursive;
+    margin-bottom: 40px;
+}
+
+/* Input styling */
+input[type="text"] {
+    font-size: 1.2rem;
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid #f8c1d8;
+    text-align: center;
+}
+
+/* Separate inputs further apart */
+.row.align-items-center > .col-md-4 {
+    margin: 0 80px;
+}
+
+/* Heart image animation */
+img[alt="Heart"] {
+    width: 140px;
+    animation: pulseHeart 2s infinite;
+}
+
+@keyframes pulseHeart {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Button Styling */
+#calc-btn {
+    background-color: #ff80b5;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(255, 128, 181, 0.4);
+    transition: all 0.3s ease;
+}
+
+#calc-btn:hover {
+    background-color: #ff5c9a;
+    color: white;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 105, 160, 0.5);
+}
+
+/* Page 4: Contact Styling */
+
+body.page4 {
+    background-color: #aedefc;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-family: "Rammetto One", sans-serif;
+    font-size: 5rem;
+    color: #004c8c;
+    margin-bottom: 30px;
+}
+
+/* Social icons */
+.fab, .fas {
+    font-size: 5rem;
+    color: #004c8c;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fab:hover, .fas:hover {
+    color: #ff66a3;
+    transform: scale(1.2);
+}
+
+/* Hug section */
+.mt-5 h4 {
+    font-size: 2rem;
+    color: #fb929e;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.mt-5 p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Hug button */
+button.btn-outline-danger {
+    font-size: 1.4rem;
+    padding: 12px 28px;
+    border-radius: 30px;
+    background-color: #ffb3d9;
+    border: none;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(255, 128, 181, 0.4);
+    transition: all 0.3s ease;
+}
+
+button.btn-outline-danger:hover {
+    background-color: #ffb3d9;
+    color: white;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 105, 160, 0.5);
+}
+
